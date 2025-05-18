@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+<form action="Furniture" method="post">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Navbar</a>
@@ -41,7 +42,7 @@
                 <option>Medium</option>
                 <option>Large</option>
             </select>
-        </div>
+        </div>u
         <div class="mb-3">
             <label for="material" class="form-label">Material</label>
             <input type="text" class="form-control" id="material" placeholder="Enter material type">
