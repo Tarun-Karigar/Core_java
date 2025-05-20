@@ -27,6 +27,7 @@
 
 <div class="container d-flex justify-content-center align-items-center h-100">
     <div class="text-center overlay">
+        <h1 style="color: red;">${message}</h1>
         <h1 class="mb-4">Welcome to My Clothing Brand</h1>
         <a href="Cloth.jsp" class="btn btn-primary btn-lg">Add New Clothing Item</a>
     </div>
