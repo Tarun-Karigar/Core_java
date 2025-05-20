@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admission Inquiry</title>
@@ -9,6 +10,7 @@
 <body>
 <form action="College" method="post">
 
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container">
         <a class="navbar-brand" href="index.jsp">College Admission</a>
@@ -16,7 +18,9 @@
 </nav>
 
 <header class="text-center py-4 bg-light">
+    <h1 style="color: red;">${message}</h1>
     <h1>Admission Inquiry</h1>
+
     <p>Fill out the form below and we'll get back to you soon!</p>
 </header>
 

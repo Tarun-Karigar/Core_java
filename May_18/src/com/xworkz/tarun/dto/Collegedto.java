@@ -1,4 +1,4 @@
-package com.xworkz.task.college;
+package com.xworkz.tarun.dto;
 
 public class Collegedto {
     private String name;
