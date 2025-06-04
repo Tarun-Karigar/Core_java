@@ -1,6 +1,8 @@
 package com.xworkz.tarun.service;
 
 import com.xworkz.tarun.dto.Clothdto;
+import repository.ClothRepository;
+import repository.ClothRepositoryImpl;
 
 public class ClothingServiceImpl implements ClothingService {
 
@@ -92,7 +94,7 @@ public class ClothingServiceImpl implements ClothingService {
 
             String manufDate = clothDto.getManufDate();
             if (manufDate != null && manufDate.length() > 2 && manufDate.length() < 21) {
-                System.out.println("Valid Manufacture Date");
+                 System.out.println("Valid Manufacture Date");
             } else {
                 System.err.println("Invalid Manufacture Date");
                 return false;
@@ -114,7 +116,10 @@ public class ClothingServiceImpl implements ClothingService {
             return false;
         }
 
+        ClothRepository clothRepository=new ClothRepositoryImpl();
+        boolean saved=clothRepository.persist(clothDto);
+
         System.out.println("Executed save method");
-        return true;
+        return saved;
     }
 }
