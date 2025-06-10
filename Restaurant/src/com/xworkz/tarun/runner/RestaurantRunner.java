@@ -25,7 +25,6 @@ public class RestaurantRunner {
 
         dto.setBokeddate(LocalDate.now());
         dto.setBookedTime(LocalTime.now());
-`
         RestaurantService service = new RestaurantServiceImpl();
 
         try {
